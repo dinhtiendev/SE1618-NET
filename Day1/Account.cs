@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Day1
 {
-    internal class Account
+    internal class Account : IComparable<Account>
     {
         public string password { get; set; }
         public string username { get; set; }
@@ -37,6 +37,11 @@ namespace Day1
             password = Console.ReadLine();
             Console.WriteLine("Password");
             username = Console.ReadLine();
+        }
+
+        public int CompareTo(Account other)
+        {
+            return username.CompareTo(other.username);
         }
     }
 }
