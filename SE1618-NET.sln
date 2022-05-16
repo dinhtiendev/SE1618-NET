@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstApp", "FirstApp\FirstApp.csproj", "{C3A65DAF-B29D-4446-B708-6A7DC92ED2FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstApp", "FirstApp\FirstApp.csproj", "{C3A65DAF-B29D-4446-B708-6A7DC92ED2FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1", "Day1\Day1.csproj", "{C1219C58-65C3-454B-82F6-9B582AEEE474}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day1", "Day1\Day1.csproj", "{C1219C58-65C3-454B-82F6-9B582AEEE474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoCollections", "Slot4\DemoCollections.csproj", "{BDAF347E-5498-4D87-9969-E3E41850BE7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoCollectionGeneric", "DemoCollectionGeneric\DemoCollectionGeneric.csproj", "{FA9193C8-0F59-4A42-86EF-B8314754D317}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{C1219C58-65C3-454B-82F6-9B582AEEE474}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1219C58-65C3-454B-82F6-9B582AEEE474}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1219C58-65C3-454B-82F6-9B582AEEE474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDAF347E-5498-4D87-9969-E3E41850BE7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDAF347E-5498-4D87-9969-E3E41850BE7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDAF347E-5498-4D87-9969-E3E41850BE7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDAF347E-5498-4D87-9969-E3E41850BE7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA9193C8-0F59-4A42-86EF-B8314754D317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA9193C8-0F59-4A42-86EF-B8314754D317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA9193C8-0F59-4A42-86EF-B8314754D317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA9193C8-0F59-4A42-86EF-B8314754D317}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
