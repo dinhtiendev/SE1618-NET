@@ -9,7 +9,7 @@ namespace Slot4
         {
             // Creates and initializes a new ArrayList.
             ArrayList myAL = new ArrayList();
-            myAL.Add("Hello");
+            myAL.Add(2);
             myAL.Add("World");
             myAL.Add("!");
 
