@@ -23,7 +23,7 @@ namespace Day1
 
         public override bool Equals(object obj)
         {
-            return base.Equals(obj);
+            return obj is Account account && password.Equals(account.password) && username.Equals(account.username);
         }
 
         public override string ToString()

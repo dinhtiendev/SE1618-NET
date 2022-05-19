@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,12 +51,9 @@ namespace Day1
             int choice = 0;
             do
             {
-                Console.WriteLine("Enter Account Username:");
-                String Username = Console.ReadLine();
-                Console.WriteLine("Enter Account Password:");
-                String Password = Console.ReadLine();
-                AddAccount(new Account(Username, Password));
-
+                Account c = new Account();
+                c.Input();
+                AddAccount(c);
                 Console.WriteLine("Do you want to add more account(0: false):");
                 choice = Convert.ToInt32(Console.ReadLine());
             } while (choice == 0);
@@ -71,14 +69,34 @@ namespace Day1
             accounts.Sort();
         }
 
-        public void SortByType()
+        public void SortByDescUsername()
         {
-            
+            accounts.Sort(new DescUserNameComparer());
         }
 
         public override string ToString()
         {
             return Name;
+        }
+
+        public void ReadFromFile(string FileName)
+        {
+            if (File.Exists(FileName))
+            {
+                string[] a = File.ReadAllLines(FileName);
+                if (A)
+            }
+            else
+            {
+                Console.WriteLine("Can't find this file: " + FileName);
+
+            }
+
+
+        }
+        public void WriteFromFile(string FileName)
+        {
+
         }
     }
 }

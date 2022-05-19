@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Day1
 {
     internal class Program
     {
         static void Main(string[] args)
-        {
+        {/*
             Account a = new Account("chilp", "123456");
             Console.WriteLine("Account: ");
             Console.WriteLine(a);
@@ -26,6 +27,20 @@ namespace Day1
             Console.WriteLine($"Customer: {c1}");
             Console.WriteLine($"Customer: {c2}");
             Console.ReadLine();
+            */
+            
+            Department department = new Department();
+            department.AddAccount(new Account("12", "23"));
+            department.AddAccount(new Account("1234", "2345"));
+            department.AddAccount(new Account("12345", "23456"));
+            department.AddAccount(new Account("123", "234"));
+            department.Display();
+            department.RemoveAccount(new Account("1234", "2345"));
+            department.Display();
+            department.Sort();
+            department.Display();
+            department.SortByDescUsername();
+            department.Display();
         }
 
     }
